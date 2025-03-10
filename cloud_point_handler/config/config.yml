@@ -1,0 +1,6 @@
+cloud_publisher:
+  publish_rate: 1
+cloud_subscriber:
+  queue_size: 10
+transform_service:
+  offset: 1.0
