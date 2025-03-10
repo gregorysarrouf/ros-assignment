@@ -12,6 +12,7 @@ public:
     }
 
 private:
+    // Send request to transform point through service 
     void processCloudPoints(const cloud_point_interfaces::msg::CloudPoints::SharedPtr msg) {
         if (!client_->wait_for_service(std::chrono::seconds(1))) {
             RCLCPP_WARN(this->get_logger(), "Transformation service not available");

@@ -11,6 +11,7 @@ public:
     }
 
 private:
+    // Publish a vector of 5 random point cloud points every second
     void publishPoints() {
         auto message = cloud_point_interfaces::msg::CloudPoints();
         for (int i = 0; i < 5; ++i) {

@@ -9,6 +9,7 @@ public:
     }
 
 private:
+    // Apply a simple transformation to points (adding 1.0 to all coordinates)
     void handleTransform(
         const std::shared_ptr<cloud_point_interfaces::srv::TransformPoints::Request> request,
         std::shared_ptr<cloud_point_interfaces::srv::TransformPoints::Response> response) {
