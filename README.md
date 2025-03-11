@@ -2,14 +2,14 @@
 
 ## Setup
 Source your ros2 install, then copy the cloud_point_handler/ and cloud_point_interfaces/
-directories to the src/ directory inside of your workstation folder (usually ros2_ws/src).
+directories to the src/ directory inside of your workspace directory (usually ros2_ws/src).
 Then, build both packages using colcon:
 ```
 colcon build --packages-select cloud_point_handler cloud_point_interfaces
 ```
 
 ## Execution
-Open a new terminal (important), navigate to your workstation directory, and source the
+Open a new terminal (important), navigate to your workspace directory, and source the
 setup.bash file:
 ```
 source install/setup.bash
@@ -24,9 +24,9 @@ ros2 launch cloud_launch.py
 ```
 
 If you wish to start each executable in a different terminal, open 2 more terminals, navigate
-to the workstation directory on each one, source the setup.bash files, then run the following
+to the workspace directory on each one, source the setup.bash files, then run the following
 three commands, each one a different terminal (note that the commands are to be executed at
-the root of your workstation directory, and preferably in the given order):
+the root of your workspace directory, and preferably in the given order):
 
 
 Start the publisher process
